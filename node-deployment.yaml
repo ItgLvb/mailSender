@@ -1,0 +1,38 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: mailsender
+  name: mailsender
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: mailsender-test
+    spec:
+      containers:
+      - env:
+        - name: SMTPFROM
+          value: test@mail.server
+        - name: SMTPHOST
+          value: mail.server.address
+        - name: SMTPPASS
+          value: password
+        - name: SMTPUSER
+          value: test@mail.server.local
+        - name: WATCHERS
+          value: manager1@mail.server manager2@mail.server
+        image: lvbitg/mailsender
+        name: mailsender
+        ports:
+        - containerPort: 8888
+        resources: {}
+        imagePullPolicy: IfNotPresent
+        stdin: true
+        tty: true
+      restartPolicy: Always
+status: {}

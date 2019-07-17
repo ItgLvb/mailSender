@@ -1,0 +1,14 @@
+version: '2'
+services:
+  node:
+    image: lvbitg/mailsender
+    environment:
+      SMTPFROM: test@mail.server
+      SMTPHOST: mail.server.address
+      SMTPPASS: password
+      SMTPUSER: test@mail.server.local
+      WATCHERS: manager1@mail.server manager2@mail.server
+    stdin_open: true
+    tty: true
+    ports:
+    - 58365:8888/tcp
