@@ -8,7 +8,6 @@ let getMessage = function (args) {
         "<p>Здравствуйте.</p>" +
         "<p>"+args.firstName+" заполнил форму на сайте <a href=\"https://www.agrosignal.com\">https://www.agrosignal.com</a> </p>" +
         "<p>Компания: " + args.company + "</p>" +
-        "<p>Площадь: " + args.area + "</p>" +
         "<p>Телефон: " + args.tel +"</p>" +
         "<p>email: " + args.eMail +"</p>" +
         "</body></html>" // html body
