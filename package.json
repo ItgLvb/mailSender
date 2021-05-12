@@ -12,7 +12,7 @@
   "devDependencies": {
     "request": "~2.88.0",
     "http": "~0.0.0",
-    "nodemailer": "~3.1.8"
+    "nodemailer": "~6.4.16"
   },
   "dependencies": {
     "querystring": "^0.2.0",
