@@ -1,6 +1,6 @@
 {
-  "name": "mailSender",
-  "version": "0.1.0",
+  "name": "mail-sender",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -9,13 +9,9 @@
     "type": "git",
     "url": "https://github.com/ItgLvb/mailSender.git"
   },
-  "devDependencies": {
-    "request": "~2.88.0",
-    "http": "~0.0.0",
-    "nodemailer": "~3.1.8"
-  },
   "dependencies": {
     "querystring": "^0.2.0",
-    "uuid": "latest"
+    "nodemailer": "6.4.16",
+    "http": "~0.0.0"
   }
 }
